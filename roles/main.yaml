@@ -1,5 +1,5 @@
-- name: "install {{component}}" #installing mongodb
-  hosts: "{{componet}}"  #connected to mongo host
+- name: "setup {{ component }} server"
+  hosts: "{{ component }}"
   become: yes
-  roles:                #it calls the rolles
-  - "{{component}}"
+  roles:
+  - "{{ component }}"
