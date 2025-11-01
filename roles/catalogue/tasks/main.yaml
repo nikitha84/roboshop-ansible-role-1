@@ -19,7 +19,7 @@
     name: mongodb-mongosh
     state: present
 
-- name: connnect to mongodb catalogue
+- name: connect to mongodb catalogue
   ansible.builtin.command: mongosh {{ MONGODB_HOST }} --quiet --eval "db.getMongo().getDBNames().indexOf('catalogue')"
   register: catalogue_output
 
