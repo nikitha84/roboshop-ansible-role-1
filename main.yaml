@@ -3,3 +3,5 @@
   become: yes
   roles:
   - "{{component}}"
+  vars:
+    MONGODB_HOST: mongodb.nikitha.fun
