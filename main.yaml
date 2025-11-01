@@ -5,3 +5,4 @@
   - "{{component}}"
   vars:
     MONGODB_HOST: mongodb.nikitha.fun
+    REDIS_HOST: redis.nikitha.fun
